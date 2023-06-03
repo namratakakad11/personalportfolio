@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        #maindiv{
+            display: grid;
+
+
+
+        }
+        /* #navlogo{
+            background-image: linear-gradient(to right,rgb(5, 75, 5), rgb(3, 58, 5));
+            height: 1cm; 
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0.5cm;
+            
+
+        } */
+        #buttondiv{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .navtg{
+            font-family: 'Source Sans Pro', sans-serif;
+            /* background-color: rgb(141, 176, 176); */
+            color: whitesmoke;
+            border-radius: 5px;
+            background-image: linear-gradient(to right,rgb(5, 75, 5), rgb(3, 58, 5));  
+                     
+        }
+        #navdiv{
+            background-image: linear-gradient(to right,rgb(5, 75, 5), rgb(3, 58, 5));
+            height: 1cm; 
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0.5cm;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #buttondiv{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        #logo{
+            background-image: linear-gradient(to right,rgb(5, 75, 5), rgb(3, 58, 5));
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            
+            
+        }
+        #nid1{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-top: 4px;
+            
+        }
+        #divintro{
+            color: whitesmoke;
+            align-self: center;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        #Aboutbutton{
+            border-radius: 5px;
+            background-image: linear-gradient(to right,rgb(5, 75, 5), rgb(3, 58, 5));
+            
+        }
+        .imgs{
+            height: 0.5cm;
+            width: 0.5cm;
+            padding: 0.0cm;
+
+        }
+       
+       .imgs:hover{
+        opacity: 0.3;
+       }
+       #introimg{
+        display: flex;
+        justify-content: flex-end;
+        margin: 5%;
+        /* background-color: rgb(5, 54, 54); */
+        height: 10cm;
+        width: 27cm;
+       }
+       #abtme{
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        margin: 1.2cm;
+        
+
+       }
+       #headabtme{
+       
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        border: 3px solid green;
+        margin: 1.2cm;
+        
+        
+
+       }
+       #myimg{
+        height: 9cm;
+        width: 6cm;
+        margin-right: 70px;
+        margin-top: 15px;
+        border-bottom: 10px solid green ;
+        border-left: 10px solid green;
+
+       }
+       #Skillshead{
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        border: 3px solid green;
+        margin: 1.2cm;
+
+       }
+       #skills{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+       }
+       .font{
+        color: whitesmoke;
+        font-family: 'Source Sans Pro', sans-serif;
+       }
+       #githead{
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        border: 3px solid green;
+        margin: 30px;
+        
+
+       }
+       #gitcontains{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+       }
+       .in{
+        background-color: black;
+        border: 1px solid greens;
+        
+       }
+
+       /* For every main div */
+       #mainaboutmediv{
+        /* background-color: rgb(8, 59, 8); */
+        margin: 1cm;
+        height: 10cm;
+        width: 30cm;
+       }
+
+       #mainskillsdiv{
+        /* background-color: rgb(8, 59, 8); */
+        margin: 1cm;
+        height: 10cm;
+        width: 30cm;
+
+
+       }
+       #Maingitdiv{
+        /* background-color: rgb(8, 59, 8); */
+        margin: 1cm;
+        height: 10cm;
+        width: 30cm;
+
+       }
+       /* #msg{
+        color: whitesmoke;
+       } */
+       #emailbutton{
+        border-radius: 5px;
+            background-image: linear-gradient(to right,rgb(5, 75, 5), rgb(3, 58, 5));
+
+       }
+       
+    
+      
+
+    </style>
+    <link rel="stylesheet" href="progressbar.css">
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <div id="maindiv" >
+       
+            <div id="navdiv">
+                <div id="logo">
+                    <img src="github.png" class="imgs" alt="github" onclick=""> ||
+                    <img src="linkedin.png" class="imgs" alt="linkedin" onclick="">
+                </div>
+                <div id="buttondiv">
+                    <nav id="nid1">
+                        <button onclick="winscrollhome()" class="navtg">Home</button>
+                        <button onclick="winscrollaboutme()" class="navtg">About</button>
+                        <button onclick="winscrollskills()" class="navtg">Skills</button>
+                        <button onclick="winscrollcontact()" class="navtg">Contact</button>
+                    </nav>
+                </div>
+            </div>
+            
+        <div id="introimg">
+            <div>
+                <img src="me.jpg" alt="myself" id="myimg">
+            </div>
+            <div id="divintro">
+                <h1>- I'M NAMRATA KAKAD.</h1>
+                <h3>FULL STACK DEVELOPER</h3>
+                <h5>Graduated with a bachelor's degree in <span class="sid">infromation technology</span> from Mumbai university. I have a wide background and knowledge of creative duties. I have two years of experience working as <span class="sid">Technical Analyst(operational Executive)</span>I am also proficient in SQL,JAVA,HTML/CSS,JAVASCRIPT. my long-term goal is to become a FULL STACK DEVELOPER and building a career in the creative industry. </h5>
+                <button onclick="winscrollaboutme()" id="Aboutbutton"> More about Me </button>
+                <br>
+                
+            </div>
+            
+        </div>
+        <!-- About me main Div -->
+        <div id="mainaboutmediv">
+            <div id="headabtme"><h2>ABOUT-ME</h2></div>
+            <DIV id="abtme">
+                <form action="#">
+                    <table >
+                        <tr>
+                            <th>First-Name: </th>
+                            <td>Namrata</td>
+                            <th>Last-Name: </th>
+                            <td>Kakad</td>
+                        </tr>
+                        <tr>
+                            <th>AGE:</th>
+                            <td>25</td>
+                            <th>Nationality: </th>
+                            <td>Indian</td>
+                    </tr>
+                    <tr>
+                        <th>Freelancer: </th>
+                        <td>Available</td>
+                        <th>Address: </th>
+                        <td>India</td>
+                        </tr>
+                        <tr>
+                            <th>Mobile-Number: </th>
+                            <td>+91-9168979649</td>
+                            <th>Email-ID:</th>
+                            <td>namratakakad@gmail.com</td>
+                        </tr>
+                            <tr>
+                            <th>Education: </th>
+                            <td>IT Graduate</td>
+                            <th>Languages:</th>
+                            <td>English,Hindi</td>
+                        </tr>
+                    </table>
+                </form>   
+            </DIV>
+        </div>
+        <!-- Main div for skills -->
+
+        <div id="mainskillsdiv">
+            <div id="Skillshead"><h2>MY Skills</h2></div>
+                <div id="skills">
+                <label for="p1" class="font">SQL</label>
+                <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 90" id="p1"></div>
+                <label for="p2" class="font">PYTHON</label>
+                <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 35" id="p1"></div>
+                <label for="p3" class="font">JAVA</label>
+                <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 50" id="p1"></div>
+                <label for="p4" class="font">JAVASCRIPT</label>
+                <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 50" id="p1"></div>
+                <label for="p5" class="font">HTML/CSS</label>
+                <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 70" id="p1"></div>
+            </div>
+        </div>
+        <!-- main div for get in touch -->
+        
+        <div id="Maingitdiv">
+            <div id="githead"><h2>GET IN TOUCH</h2></div>
+            <div id="gitcontains">
+                <form>
+                    <table>
+                        <tr>
+                            <th><input type="text" id="name" placeholder="Your Name" class="in" > </th>
+                            <th><input type="email" id="email" placeholder="Your Email-ID" class="in" ></th>
+                        </tr>
+                        <tr>
+                            <th> <input type="text" id="subject" placeholder="Your subject" class="in"></th>
+                            <th></th>
+                            
+                        </tr>
+                        <tr>
+                            <TH> </TH>
+                            <th><textarea placeholder="Your Message"  id="msg" rows="9" cols="30"  class="in"></textarea></th>
+                            
+                        </tr>
+                        <tr>
+                            <TH> </TH>
+                            <th ><input type="button" onclick="alert('Email sent!')" value="Send Email" id="emailbutton"></th>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="portfolio.js">
+
+    </script>
+</body>
+</html>
